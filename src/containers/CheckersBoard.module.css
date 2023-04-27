@@ -1,0 +1,19 @@
+.gameBoard {
+    border: 2px solid black;
+    display: inline-flex;
+    align-content: center;
+    border-collapse: collapse;
+}
+
+td {
+    min-width: 2vw;
+    min-height: 2vw;
+    width: 5vw;
+    height: 5vw;
+}
+
+tr:nth-child(even) td:nth-child(even), tr:nth-child(odd) td:nth-child(odd){
+    background-color: gray;
+}
+
+
