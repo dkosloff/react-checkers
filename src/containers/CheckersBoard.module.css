@@ -5,13 +5,15 @@
     border-collapse: collapse;
 }
 
-.gameBoard td {
+td {
     min-width: 2vw;
     min-height: 2vw;
     width: 5vw;
     height: 5vw;
 }
 
-.gameBoard tr:nth-child(even) td:nth-child(even), .gameBoard tr:nth-child(odd) td:nth-child(odd){
+tr:nth-child(even) td:nth-child(even), tr:nth-child(odd) td:nth-child(odd){
     background-color: gray;
 }
+
+

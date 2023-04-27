@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import styles from './CheckersBoard.module.css';
+import {ReactComponent as BlackPiece} from './../images/checkers_piece_black.svg';
+import {ReactComponent as RedPiece} from './../images/checkers_piece_red.svg';
 
 function CheckersBoard() {
   const [board, setBoard] = useState(getStartingBoard);
@@ -30,7 +32,7 @@ function CheckersBoard() {
       {board.map((row, idx) => (
         <tr>
           {row.map((piece) => (
-            <td>{piece}</td>
+            <td>{(piece === 'b') ? <BlackPiece /> : (piece === 'r'? <RedPiece /> : '')}</td>
           ))}
         </tr>
       ))}
